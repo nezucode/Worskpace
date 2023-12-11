@@ -1,6 +1,3 @@
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 import java.util.Scanner;
 import java.io.*;
 import java.util.InputMismatchException;  
@@ -25,9 +22,9 @@ class GUI extends JFrame {
 	
 	JLabel lgenre = new JLabel(" Genre ");
 	String[] jenisGenre = {"Action","Sci-fi", "Comedy", "Romance", "Horror"};
-	JComboBox cmbGenre = new JComboBox();
+	JComboBox cmbGenre = new JComboBox(jenisGenre);
 	
-	JLabel lstatus = new JLabel(" Status ");
+	JLabel lstatus = new JLabel(" Status : ");
 	
 	JCheckBox cbSingle = new JCheckBox(" Single ");
 	JCheckBox cbAlbum = new JCheckBox(" Album ");
@@ -37,7 +34,7 @@ class GUI extends JFrame {
 	public GUI() {
 		setTitle("Biodata");
 		setDefaultCloseOperation(3);
-		setSize(500, 350);
+		setSize(420, 280);
 		
 		ButtonGroup group = new ButtonGroup();
 		group.add(rbMale);
@@ -58,17 +55,17 @@ class GUI extends JFrame {
 		
 //		elements.setBounds(y, x, (panjang), (lebar);
 		
-		lname.setBounds(20, 20, 120, 20);
-		fname.setBounds(120, 20, 240, 20);
-		lgender.setBounds(20, 52, 120, 20);
-		rbMale.setBounds(120, 52, 120, 20);
-		rbFemale.setBounds(240, 52, 120, 20);
-//		lgenre.setBounds(10, 10, 120, 20);
-//		cmbGenre.setBounds(10, 10, 120, 20);
-//		lstatus.setBounds(10, 10, 120, 20);
-//		cbSingle.setBounds(10, 10, 120, 20);
-//		cbAlbum.setBounds(10, 10, 120, 20);
-//		btnSave.setBounds(10, 10, 120, 20);
+		lname.setBounds(20, 20, 120, 28);
+		fname.setBounds(120, 20, 240, 28);
+		lgender.setBounds(20, 52, 120, 28);
+		rbMale.setBounds(120, 52, 122, 28);
+		rbFemale.setBounds(200, 52, 122, 28);
+		lgenre.setBounds(20, 84, 120, 28);
+		cmbGenre.setBounds(120, 84, 120, 28);
+		lstatus.setBounds(20, 116, 120, 28);
+		cbSingle.setBounds(120, 118, 120, 28);
+		cbAlbum.setBounds(200, 118, 120, 28);
+		btnSave.setBounds(180, 170, 120, 28);
 		
 		
 		setVisible(true);
