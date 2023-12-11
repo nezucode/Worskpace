@@ -18,7 +18,7 @@ class GUI extends JFrame {
 	final JTextField fname = new JTextField(10);
 	
 	JLabel lname = new JLabel(" Name : ");
-	JLabel lgender = new JLabel(" Gender: ");
+	JLabel lgender = new JLabel(" Gender : ");
 	
 	JRadioButton rbMale = new JRadioButton(" Male ");
 	JRadioButton rbFemale = new JRadioButton(" Female ");
